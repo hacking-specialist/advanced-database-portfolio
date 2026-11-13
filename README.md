@@ -3,9 +3,8 @@
 **Case study:** Library Management System  
 **Organisation:** MIVA Library Service - hypothetical academic case study  
 **Repository:** [hacking-specialist/advanced-database-portfolio](https://github.com/hacking-specialist/advanced-database-portfolio)  
-**Name / student ID / course code:** left for the student to complete privately
 
-The supplied seven-entity ER diagram is implemented in PostgreSQL and extended with a MongoDB catalogue. All records are synthetic. Code, actual outputs, plans and analysis are included.
+ All records are synthetic. Code, actual outputs, plans and analysis are included.
 
 ## Assessment guide
 
