@@ -1,0 +1,10 @@
+[
+  {
+    "loan_status": "active",
+    "count": "10000"
+  },
+  {
+    "loan_status": "returned",
+    "count": "190000"
+  }
+]

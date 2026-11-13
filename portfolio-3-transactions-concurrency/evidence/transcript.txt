@@ -1,0 +1,47 @@
+{"at":"2026-11-13T08:59:41.008Z","session":"A","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.010Z","session":"A","sql":"SELECT library.issue_loan(1, 2, 1, DATE '2026-11-13', 14)","params":[],"rows":[{"issue_loan":"9"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.010Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.016Z","session":"observer","sql":"SELECT status FROM library.book_copies WHERE copy_id=2","params":[],"rows":[{"status":"on_loan"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.017Z","session":"A","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.018Z","session":"A","sql":"SELECT library.issue_loan(1, 4, 1, DATE '2026-11-13', 14)","params":[],"rows":[{"issue_loan":"10"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.018Z","session":"A","sql":"ROLLBACK","params":[],"rows":[],"command":"ROLLBACK"}
+{"at":"2026-11-13T08:59:41.019Z","session":"observer","sql":"SELECT status FROM library.book_copies WHERE copy_id=4","params":[],"rows":[{"status":"available"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.019Z","session":"A","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.020Z","session":"A","sql":"SELECT library.issue_loan(1, 6, 1, DATE '2026-11-13', 14)","params":[],"rows":[{"issue_loan":"11"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.020Z","session":"B","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"session":"B","sql":"SELECT library.issue_loan(2, 6, 2, DATE '2026-11-13', 14)","state":"submitted while A holds copy lock"}
+{"session":"observer","observation":"actual blocking confirmed","pid":11724,"wait_event_type":"Lock","wait_event":"transactionid","blockers":[21592]}
+{"at":"2026-11-13T08:59:41.147Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"session":"B","sqlstate":"P0001","error":"Copy is not available"}
+{"at":"2026-11-13T08:59:41.148Z","session":"B","sql":"ROLLBACK","params":[],"rows":[],"command":"ROLLBACK"}
+{"at":"2026-11-13T08:59:41.153Z","session":"observer","sql":"SELECT count(*)::integer AS n FROM library.loans WHERE copy_id=6 AND loan_status='active'","params":[],"rows":[{"n":1}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.154Z","session":"A","sql":"BEGIN ISOLATION LEVEL READ COMMITTED","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.154Z","session":"A","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"20000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.162Z","session":"B","sql":"UPDATE library.books SET replacement_cost=$1 WHERE book_id=5","params":[21000],"rows":[],"command":"UPDATE"}
+{"at":"2026-11-13T08:59:41.163Z","session":"A","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"21000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.163Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.163Z","session":"A","sql":"BEGIN ISOLATION LEVEL REPEATABLE READ","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.164Z","session":"A","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"21000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.165Z","session":"B","sql":"UPDATE library.books SET replacement_cost=$1 WHERE book_id=5","params":[22000],"rows":[],"command":"UPDATE"}
+{"at":"2026-11-13T08:59:41.166Z","session":"A","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"21000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.166Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.166Z","session":"A","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.167Z","session":"B","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.167Z","session":"A","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"22000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.168Z","session":"B","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"22000.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.169Z","session":"A","sql":"UPDATE library.books SET replacement_cost=$1 WHERE book_id=5","params":[22100],"rows":[],"command":"UPDATE"}
+{"at":"2026-11-13T08:59:41.169Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.170Z","session":"B","sql":"UPDATE library.books SET replacement_cost=$1 WHERE book_id=5","params":[22200],"rows":[],"command":"UPDATE"}
+{"at":"2026-11-13T08:59:41.171Z","session":"B","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.176Z","session":"observer","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"22200.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.179Z","session":"observer","sql":"UPDATE library.books SET replacement_cost=22000 WHERE book_id=5","params":[],"rows":[],"command":"UPDATE"}
+{"at":"2026-11-13T08:59:41.179Z","session":"A","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.179Z","session":"B","sql":"BEGIN","params":[],"rows":[],"command":"BEGIN"}
+{"at":"2026-11-13T08:59:41.180Z","session":"A","sql":"UPDATE library.books SET replacement_cost=replacement_cost+100 WHERE book_id=5","params":[],"rows":[],"command":"UPDATE"}
+{"session":"observer","observation":"B atomic increment waits for A row lock"}
+{"at":"2026-11-13T08:59:41.286Z","session":"A","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"session":"B","sql":"UPDATE library.books SET replacement_cost=replacement_cost+200 WHERE book_id=5","state":"completed after A commit"}
+{"at":"2026-11-13T08:59:41.287Z","session":"B","sql":"COMMIT","params":[],"rows":[],"command":"COMMIT"}
+{"at":"2026-11-13T08:59:41.287Z","session":"observer","sql":"SELECT replacement_cost FROM library.books WHERE book_id=5","params":[],"rows":[{"replacement_cost":"22300.00"}],"command":"SELECT"}
+{"at":"2026-11-13T08:59:41.293Z","session":"observer","sql":"SELECT * FROM library.workflow_inconsistencies","params":[],"rows":[],"command":"SELECT"}
+PASS: all native multi-session checks

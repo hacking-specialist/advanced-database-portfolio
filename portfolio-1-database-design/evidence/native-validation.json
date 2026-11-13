@@ -1,0 +1,145 @@
+{
+  "executed_at": "2026-11-13T08:59:41.005Z",
+  "version": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit",
+  "validation": "05_validation.sql passed without exception",
+  "queries": [
+    [
+      {
+        "book_id": "1",
+        "title": "Database Foundations",
+        "author": "Ada Example",
+        "copy_id": "2"
+      },
+      {
+        "book_id": "2",
+        "title": "Distributed Data Practice",
+        "author": "Bola Example",
+        "copy_id": "3"
+      },
+      {
+        "book_id": "2",
+        "title": "Distributed Data Practice",
+        "author": "Bola Example",
+        "copy_id": "4"
+      },
+      {
+        "book_id": "3",
+        "title": "Learning SQL",
+        "author": "Chidi Example",
+        "copy_id": "6"
+      },
+      {
+        "book_id": "4",
+        "title": "Introduction to Research",
+        "author": "Dara Example",
+        "copy_id": "8"
+      },
+      {
+        "book_id": "5",
+        "title": "Digital Libraries",
+        "author": "Efe Example",
+        "copy_id": "9"
+      },
+      {
+        "book_id": "5",
+        "title": "Digital Libraries",
+        "author": "Efe Example",
+        "copy_id": "10"
+      }
+    ],
+    [
+      {
+        "loan_id": "1",
+        "full_name": "Amara Sample",
+        "title": "Database Foundations",
+        "due_date": "2026-11-14T23:00:00.000Z",
+        "days_overdue": 5
+      },
+      {
+        "loan_id": "4",
+        "full_name": "Bayo Sample",
+        "title": "Introduction to Research",
+        "due_date": "2026-11-15T23:00:00.000Z",
+        "days_overdue": 4
+      }
+    ],
+    [
+      {
+        "borrower_id": "2",
+        "full_name": "Bayo Sample",
+        "outstanding_ngn": "300.00"
+      },
+      {
+        "borrower_id": "3",
+        "full_name": "Chika Sample",
+        "outstanding_ngn": "2500.00"
+      }
+    ],
+    [
+      {
+        "loan_id": "1",
+        "full_name": "Amara Sample",
+        "title": "Database Foundations",
+        "issued_by": "Lara Sample",
+        "return_date": null,
+        "received_by": null,
+        "condition_rating": null
+      },
+      {
+        "loan_id": "2",
+        "full_name": "Bayo Sample",
+        "title": "Distributed Data Practice",
+        "issued_by": "Lara Sample",
+        "return_date": "2026-10-17T23:00:00.000Z",
+        "received_by": "Tunde Sample",
+        "condition_rating": "good"
+      },
+      {
+        "loan_id": "3",
+        "full_name": "Chika Sample",
+        "title": "Learning SQL",
+        "issued_by": "Tunde Sample",
+        "return_date": "2026-10-19T23:00:00.000Z",
+        "received_by": "Lara Sample",
+        "condition_rating": "damaged"
+      },
+      {
+        "loan_id": "4",
+        "full_name": "Bayo Sample",
+        "title": "Introduction to Research",
+        "issued_by": "Tunde Sample",
+        "return_date": null,
+        "received_by": null,
+        "condition_rating": null
+      }
+    ],
+    [
+      {
+        "book_id": "1",
+        "title": "Database Foundations",
+        "loan_count": "1"
+      },
+      {
+        "book_id": "2",
+        "title": "Distributed Data Practice",
+        "loan_count": "1"
+      },
+      {
+        "book_id": "3",
+        "title": "Learning SQL",
+        "loan_count": "1"
+      },
+      {
+        "book_id": "4",
+        "title": "Introduction to Research",
+        "loan_count": "1"
+      },
+      {
+        "book_id": "5",
+        "title": "Digital Libraries",
+        "loan_count": "0"
+      }
+    ],
+    []
+  ]
+}

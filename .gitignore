@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+postgres-data/
+mongo-data/
+.runs/
+.cache/
+tmp/

@@ -1,0 +1,208 @@
+{
+  "executed_at": "2026-11-13T09:01:12.889Z",
+  "runtime": "native PostgreSQL server",
+  "version": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35228, 64-bit",
+  "platform": "win32 x64",
+  "cpu": "Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz",
+  "logical_cpus": 4,
+  "rows": 200000,
+  "repetitions": 7,
+  "warmups": 1,
+  "note": "Warm-cache sequential phases; EXPLAIN ANALYZE overhead included. No cold-cache or production claims.",
+  "settings": [
+    {
+      "name": "fsync",
+      "setting": "on",
+      "unit": null
+    },
+    {
+      "name": "jit",
+      "setting": "on",
+      "unit": null
+    },
+    {
+      "name": "max_parallel_workers_per_gather",
+      "setting": "2",
+      "unit": null
+    },
+    {
+      "name": "random_page_cost",
+      "setting": "4",
+      "unit": null
+    },
+    {
+      "name": "shared_buffers",
+      "setting": "16384",
+      "unit": "8kB"
+    },
+    {
+      "name": "work_mem",
+      "setting": "4096",
+      "unit": "kB"
+    }
+  ],
+  "phases": {
+    "before": {
+      "borrower_history": {
+        "result_rows": 40,
+        "median_ms": 107.235,
+        "min_ms": 97.768,
+        "max_ms": 162.144,
+        "timings_ms": [
+          97.768,
+          107.235,
+          162.144,
+          104.406,
+          107.759,
+          109.898,
+          101.993
+        ]
+      },
+      "active_due_range": {
+        "result_rows": 400,
+        "median_ms": 85.061,
+        "min_ms": 81.981,
+        "max_ms": 112.095,
+        "timings_ms": [
+          85.061,
+          82.247,
+          112.095,
+          98.639,
+          81.981,
+          86.145,
+          83.792
+        ]
+      },
+      "status_aggregation": {
+        "result_rows": 2,
+        "median_ms": 166.072,
+        "min_ms": 135.642,
+        "max_ms": 210.442,
+        "timings_ms": [
+          166.072,
+          135.642,
+          150.28,
+          159.382,
+          174.128,
+          210.442,
+          189.426
+        ]
+      },
+      "year_extract": {
+        "result_rows": 1,
+        "median_ms": 150.081,
+        "min_ms": 130.848,
+        "max_ms": 174.401,
+        "timings_ms": [
+          130.848,
+          140.125,
+          150.081,
+          174.401,
+          143.608,
+          162.075,
+          159.354
+        ]
+      },
+      "year_range": {
+        "result_rows": 1,
+        "median_ms": 112.61,
+        "min_ms": 102.28,
+        "max_ms": 130.446,
+        "timings_ms": [
+          102.28,
+          107.032,
+          117.738,
+          130.446,
+          119.05,
+          112.61,
+          105.807
+        ]
+      },
+      "storage": {
+        "table_bytes": "17301504",
+        "index_bytes": "4513792"
+      }
+    },
+    "after": {
+      "borrower_history": {
+        "result_rows": 40,
+        "median_ms": 0.171,
+        "min_ms": 0.158,
+        "max_ms": 0.204,
+        "timings_ms": [
+          0.185,
+          0.169,
+          0.171,
+          0.163,
+          0.204,
+          0.158,
+          0.18
+        ]
+      },
+      "active_due_range": {
+        "result_rows": 400,
+        "median_ms": 0.914,
+        "min_ms": 0.832,
+        "max_ms": 1.108,
+        "timings_ms": [
+          1.011,
+          1.014,
+          0.882,
+          0.901,
+          0.832,
+          1.108,
+          0.914
+        ]
+      },
+      "status_aggregation": {
+        "result_rows": 2,
+        "median_ms": 140.433,
+        "min_ms": 131.181,
+        "max_ms": 193.581,
+        "timings_ms": [
+          131.181,
+          135.46,
+          140.433,
+          133.056,
+          193.581,
+          165.443,
+          144.686
+        ]
+      },
+      "year_extract": {
+        "result_rows": 1,
+        "median_ms": 118.7,
+        "min_ms": 107.464,
+        "max_ms": 141.252,
+        "timings_ms": [
+          107.464,
+          119.109,
+          141.252,
+          116.808,
+          118.7,
+          117.683,
+          120.245
+        ]
+      },
+      "year_range": {
+        "result_rows": 1,
+        "median_ms": 36.333,
+        "min_ms": 34.975,
+        "max_ms": 47.675,
+        "timings_ms": [
+          36.333,
+          47.675,
+          35.681,
+          41.419,
+          34.975,
+          35.199,
+          37.726
+        ]
+      },
+      "storage": {
+        "table_bytes": "17301504",
+        "index_bytes": "14385152"
+      }
+    }
+  }
+}

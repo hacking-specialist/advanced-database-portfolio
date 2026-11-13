@@ -1,0 +1,146 @@
+{
+  "explainVersion": "1",
+  "queryPlanner": {
+    "namespace": "library_portfolio.catalogue",
+    "parsedQuery": {
+      "genres": {
+        "$eq": "Computing"
+      }
+    },
+    "indexFilterSet": false,
+    "queryHash": "14D4AA0D",
+    "planCacheShapeHash": "14D4AA0D",
+    "planCacheKey": "46CD28E3",
+    "optimizationTimeMillis": 0,
+    "maxIndexedOrSolutionsReached": false,
+    "maxIndexedAndSolutionsReached": false,
+    "maxScansToExplodeReached": false,
+    "prunedSimilarIndexes": false,
+    "winningPlan": {
+      "isCached": false,
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "genres": 1,
+          "publicationYear": -1
+        },
+        "indexName": "genres_1_publicationYear_-1",
+        "isMultiKey": true,
+        "multiKeyPaths": {
+          "genres": [
+            "genres"
+          ],
+          "publicationYear": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "genres": [
+            "[\"Computing\", \"Computing\"]"
+          ],
+          "publicationYear": [
+            "[MaxKey, MinKey]"
+          ]
+        }
+      }
+    },
+    "rejectedPlans": []
+  },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 3,
+    "executionTimeMillis": 0,
+    "totalKeysExamined": 3,
+    "totalDocsExamined": 3,
+    "executionStages": {
+      "isCached": false,
+      "stage": "FETCH",
+      "nReturned": 3,
+      "executionTimeMillisEstimate": 0,
+      "works": 4,
+      "advanced": 3,
+      "needTime": 0,
+      "needYield": 0,
+      "saveState": 0,
+      "restoreState": 0,
+      "isEOF": 1,
+      "docsExamined": 3,
+      "alreadyHasObj": 0,
+      "inputStage": {
+        "stage": "IXSCAN",
+        "nReturned": 3,
+        "executionTimeMillisEstimate": 0,
+        "works": 4,
+        "advanced": 3,
+        "needTime": 0,
+        "needYield": 0,
+        "saveState": 0,
+        "restoreState": 0,
+        "isEOF": 1,
+        "keyPattern": {
+          "genres": 1,
+          "publicationYear": -1
+        },
+        "indexName": "genres_1_publicationYear_-1",
+        "isMultiKey": true,
+        "multiKeyPaths": {
+          "genres": [
+            "genres"
+          ],
+          "publicationYear": []
+        },
+        "isUnique": false,
+        "isSparse": false,
+        "isPartial": false,
+        "indexVersion": 2,
+        "direction": "forward",
+        "indexBounds": {
+          "genres": [
+            "[\"Computing\", \"Computing\"]"
+          ],
+          "publicationYear": [
+            "[MaxKey, MinKey]"
+          ]
+        },
+        "keysExamined": 3,
+        "seeks": 1,
+        "dupsTested": 3,
+        "dupsDropped": 0
+      }
+    }
+  },
+  "queryShapeHash": "73B3B357D0BC8DE460F764609E5C686715CD7A8607260345B481AA94FCAC6167",
+  "command": {
+    "find": "catalogue",
+    "filter": {
+      "genres": "Computing"
+    },
+    "sort": {
+      "publicationYear": -1
+    },
+    "$db": "library_portfolio"
+  },
+  "serverInfo": {
+    "host": "Black-Arch",
+    "port": 49181,
+    "version": "8.0.17",
+    "gitVersion": "b20e43625b72f4bb43cc15107f80ac966ae13b6d"
+  },
+  "serverParameters": {
+    "internalQueryFacetBufferSizeBytes": 104857600,
+    "internalQueryFacetMaxOutputDocSizeBytes": 104857600,
+    "internalLookupStageIntermediateDocumentMaxSizeBytes": 104857600,
+    "internalDocumentSourceGroupMaxMemoryBytes": 104857600,
+    "internalQueryMaxBlockingSortMemoryUsageBytes": 104857600,
+    "internalQueryProhibitBlockingMergeOnMongoS": 0,
+    "internalQueryMaxAddToSetBytes": 104857600,
+    "internalDocumentSourceSetWindowFieldsMaxMemoryBytes": 104857600,
+    "internalQueryFrameworkControl": "trySbeRestricted",
+    "internalQueryPlannerIgnoreIndexWithCollationForRegex": 1
+  },
+  "ok": 1
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "loan_id": "709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "5709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "10709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "15709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "20709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "25709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "30709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "35709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "40709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "45709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "50709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "55709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "60709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "65709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "70709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "75709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "80709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "85709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "90709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "95709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "100709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "105709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "110709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "115709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "120709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "125709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "130709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "135709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "140709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "145709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "150709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "155709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "160709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "165709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "170709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "175709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "180709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "185709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "190709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  },
+  {
+    "loan_id": "195709",
+    "borrower_id": "1234",
+    "borrow_date": "2024-12-09T23:00:00.000Z",
+    "due_date": "2024-12-23T23:00:00.000Z",
+    "loan_status": "returned"
+  }
+]

@@ -1,0 +1,6 @@
+query,before_median_ms,after_median_ms,speedup
+borrower_history,107.235,0.171,627.11
+active_due_range,85.061,0.914,93.06
+status_aggregation,166.072,140.433,1.18
+year_extract,150.081,118.7,1.26
+year_range,112.61,36.333,3.10

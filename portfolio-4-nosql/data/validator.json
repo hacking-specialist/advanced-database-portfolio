@@ -1,0 +1,75 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "required": [
+      "_id",
+      "title",
+      "authors",
+      "genres",
+      "replacementCostNgn",
+      "copyIds"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": [
+          "int",
+          "long",
+          "double"
+        ]
+      },
+      "title": {
+        "bsonType": "string",
+        "minLength": 1
+      },
+      "authors": {
+        "bsonType": "array",
+        "minItems": 1,
+        "items": {
+          "bsonType": "object",
+          "required": [
+            "name"
+          ],
+          "properties": {
+            "name": {
+              "bsonType": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "genres": {
+        "bsonType": "array",
+        "minItems": 1,
+        "items": {
+          "bsonType": "string"
+        }
+      },
+      "isbn": {
+        "bsonType": "string",
+        "pattern": "^([0-9]{9}[0-9X]|[0-9]{13})$"
+      },
+      "replacementCostNgn": {
+        "bsonType": [
+          "int",
+          "long",
+          "double",
+          "decimal"
+        ],
+        "minimum": 0
+      },
+      "copyIds": {
+        "bsonType": "array",
+        "items": {
+          "bsonType": [
+            "int",
+            "long",
+            "double"
+          ]
+        }
+      },
+      "metadata": {
+        "bsonType": "object"
+      }
+    }
+  }
+}
