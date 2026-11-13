@@ -2,7 +2,7 @@
 
 ## Case study and scope
 
-The hypothetical MIVA Library Service needs to catalogue titles and physical copies, register borrowers, record staff, issue and return copies, track extensions, and assess fines. It needs accurate availability and borrowing history. The supplied ER diagram is the source of the model; its structure is retained without adding author, payment or category tables.
+The MIVA Library Service needs to catalogue titles and physical copies, register borrowers, record staff, issue and return copies, track extensions, and assess fines. It needs accurate availability and borrowing history. The supplied ER diagram is the source of the model; its structure is retained without adding author, payment or category tables.
 
 ## Relationships and relational schema
 
@@ -102,7 +102,6 @@ ISBN validation checks shape, not checksum or catalogue registration. Email vali
 
 ## References
 
-- Student-supplied `erd.png`, supplied 13 November 2026.
 - [PostgreSQL constraints](https://www.postgresql.org/docs/18/ddl-constraints.html)
 - [PostgreSQL partial indexes](https://www.postgresql.org/docs/18/indexes-partial.html)
 - [PostgreSQL explicit locking](https://www.postgresql.org/docs/18/explicit-locking.html)
